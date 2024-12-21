@@ -108,6 +108,9 @@ echo -e "2024-01-01 10:00:00 INFO: System boot completed.\n2024-01-01 10:15:32 W
   
    ## Ресурсы
 
-   1. Официальное руководство по grep
-Регулярные выражения для работы с grep
-Руководство по флагам grep (русский)
+   1. [Официальное руководство по grep](https://www.gnu.org/s/grep/manual/grep.html)
+   2. [Руководство по grep на Linux man-pages](https://man7.org/linux/man-pages/man1/grep.1.html)
+   3. [Регулярные выражения Bash: полный гайд](https://timeweb.cloud/tutorials/linux/regulyarnye-vyrazheniya-bash-gajd)
+   4. [Команда grep и регулярные выражения в Linux](https://codechick.io/tutorials/unix-linux/unix-linux-regular-expressions-grep)
+   5. [Команда grep в Linux - поиск строк и шаблонов в файлах](https://selectel.ru/blog/tutorials/grep-command-in-linux/)
+   6. [Регулярные выражения и команда grep](https://hackware.ru/?p=3238)
