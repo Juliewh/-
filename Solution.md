@@ -46,3 +46,17 @@ grep "2024-01-04" logfile.txt | grep "ERROR"
 ```
 ![изображение](https://github.com/user-attachments/assets/c58dd864-4330-4b8b-a6f2-130a69305a66)
 
+8. Найдем строки, где упоминается путь к устройствам, например, ```dev/sda1```:
+
+```
+grep "/dev/sda1" logfile.txt
+```
+
+9. Выведем строки, где упоминается ```service X``` или ```task Y```, независимо от регистра:
+
+```
+grep -iE "service X|task Y" logfile.txt
+```
+![изображение](https://github.com/user-attachments/assets/f95ff77d-db22-4f28-8bc5-f725d02a9ae7)
+
+10. Подсчитаем количество строк
