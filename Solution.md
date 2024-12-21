@@ -59,4 +59,45 @@ grep -iE "service X|task Y" logfile.txt
 ```
 ![изображение](https://github.com/user-attachments/assets/f95ff77d-db22-4f28-8bc5-f725d02a9ae7)
 
-10. Подсчитаем количество строк
+10. Подсчитаем количество строк с уровнем важности ```ERROR```, ```WARNING``` и ```INFO``` (для каждого уровня отдельно):
+
+```
+grep -c "ERROR" logfile.txt
+```
+
+```
+grep -c "WARNING" logfile.txt
+```
+
+```
+grep -c "INFO" logfile.txt
+```
+
+11. Подсчитаем количество строк, где упоминается слово ```detected```:
+
+```
+grep -c "detected" logfile.txt
+```
+![изображение](https://github.com/user-attachments/assets/12644ccf-a7ec-4b7b-9365-eb68f0a36eae)
+
+12. Отобразим строки с ```ERROR``` и выделим совпадения цветом:
+
+```
+grep --color "ERROR" logfile.txt
+```
+
+13. Выведем строки с ```ERROR```, включая 2 строки до и 1 строку после:
+
+```
+grep -B 2 -A 1 "ERROR" logfile.txt
+```
+![изображение](https://github.com/user-attachments/assets/d918a725-2e28-4b6c-8a49-5e529101e5b6)
+
+14. Найдем строки, где указаны ```ERROR``` и время между ```09:00:00``` и ```12:00:00```:
+
+```
+grep "ERROR" logfile.txt | grep -E "09:[0-5][0-9]:[0-5][0-9]|10:[0-5][0-9]:[0-5][0-9]|11:[0-5][0-9]:[0-5][0-9]"
+```
+![изображение](https://github.com/user-attachments/assets/739cab0b-beec-45ae-b944-45fbd42649b7)
+
+## Все работает, ура, конец
